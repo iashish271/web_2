@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elysian Memories - A Birthday Scrapbook</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Caveat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ==================== FLOATING PARTICLES CONTAINER ==================== -->
+    <div id="particles-container"></div>
+    <div id="hearts-container"></div>
+    <div id="petals-container"></div>
+
+    <!-- ==================== ENVELOPE INTRO SECTION ==================== -->
+    <section id="envelope-section" class="envelope-section">
+        <div class="envelope-bg" style="background-image: url('image(6).png')"></div>
+        <div class="envelope-overlay"></div>
+
+        <div class="envelope-wrapper" id="envelopeWrapper">
+            <div class="envelope-body">
+                <div class="letter" id="letter">
+                    <div class="letter-content">
+                        <h1 class="letter-heading" id="letterHeading">My Dearest</h1>
+                        <p class="letter-body" id="letterBody">On this special day, I wanted to give you something as timeless as the memories we've shared. This little book is a collection of moments, wishes, and all the love my heart holds for you. Happy Birthday.</p>
+                        <span class="cursor" id="letterCursor">|</span>
+                    </div>
+                </div>
+            </div>
+            <div class="envelope-flap"></div>
+            <div class="wax-seal" id="waxSeal">
+                <div class="wax-heart">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                </div>
+                <div class="crack-lines"></div>
+            </div>
+        </div>
+
+        <p class="tap-hint" id="tapHint">Tap the seal to open</p>
+    </section>
+
+    <!-- ==================== MAIN CONTENT (initially hidden) ==================== -->
+    <main id="mainContent" class="main-content">
+
+        <!-- ==================== HERO TITLE SECTION ==================== -->
+        <section class="hero-section" style="background-image: url('image(4).png')">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title" id="heroTitle">Happy Birthday</h1>
+                <p class="hero-subtitle" id="heroSubtitle">A scrapbook of memories, love & wishes</p>
+                <div class="hero-scroll-hint">
+                    <span class="scroll-arrow"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== FLOWER MESSAGE SECTION 1 ==================== -->
+        <section class="flower-message-section" style="background-image: url('image(2).png')">
+            <div class="flower-overlay"></div>
+            <div class="svg-text-container">
+                <svg viewBox="0 0 800 200" class="scribble-svg">
+                    <text x="400" y="100" text-anchor="middle" class="text-stroke" id="strokeText1">You are my sunshine</text>
+                    <text x="400" y="100" text-anchor="middle" class="text-base" id="baseText1">You are my sunshine</text>
+                </svg>
+            </div>
+            <p class="flower-caption">My world blooms because of you</p>
+        </section>
+
+        <!-- ==================== MEMORY GALLERY (POLAROIDS) ==================== -->
+        <section class="gallery-section">
+            <div class="gallery-bg" style="background-image: url('image(1).png')"></div>
+            <div class="gallery-overlay"></div>
+            <h2 class="gallery-title">Precious Memories</h2>
+            <div class="polaroid-grid">
+                <div class="polaroid" style="--final-rotation: -5deg; --delay: 0s;">
+                    <div class="polaroid-frame">
+                        <div class="polaroid-img" style="background: linear-gradient(135deg, #f5d0d0, #e8b4b8);"></div>
+                        <p class="polaroid-caption">That beautiful smile</p>
+                    </div>
+                    <div class="polaroid-tape"></div>
+                </div>
+                <div class="polaroid" style="--final-rotation: 3deg; --delay: 0.15s;">
+                    <div class="polaroid-frame">
+                        <div class="polaroid-img" style="background: linear-gradient(135deg, #d4e5f7, #b8d4f0);"></div>
+                        <p class="polaroid-caption">Our special day</p>
+                    </div>
+                    <div class="polaroid-tape"></div>
+                </div>
+                <div class="polaroid" style="--final-rotation: -8deg; --delay: 0.3s;">
+                    <div class="polaroid-frame">
+                        <div class="polaroid-img" style="background: linear-gradient(135deg, #e8d5f0, #d4b8e0);"></div>
+                        <p class="polaroid-caption">Forever & Always</p>
+                    </div>
+                    <div class="polaroid-tape"></div>
+                </div>
+                <div class="polaroid" style="--final-rotation: 6deg; --delay: 0.45s;">
+                    <div class="polaroid-frame">
+                        <div class="polaroid-img" style="background: linear-gradient(135deg, #f0e8d5, #e8d4b8);"></div>
+                        <p class="polaroid-caption">Laughing together</p>
+                    </div>
+                    <div class="polaroid-tape"></div>
+                </div>
+                <div class="polaroid" style="--final-rotation: -3deg; --delay: 0.6s;">
+                    <div class="polaroid-frame">
+                        <div class="polaroid-img" style="background: linear-gradient(135deg, #d5f0e0, #b8e8c8);"></div>
+                        <p class="polaroid-caption">Adventures with you</p>
+                    </div>
+                    <div class="polaroid-tape"></div>
+                </div>
+                <div class="polaroid" style="--final-rotation: 4deg; --delay: 0.75s;">
+                    <div class="polaroid-frame">
+                        <div class="polaroid-img" style="background: linear-gradient(135deg, #f7d5e0, #f0b8c8);"></div>
+                        <p class="polaroid-caption">My favorite person</p>
+                    </div>
+                    <div class="polaroid-tape"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== WISH CANDLES SECTION ==================== -->
+        <section class="wish-section">
+            <div class="wish-bg" style="background-image: url('image.png')"></div>
+            <div class="wish-overlay"></div>
+            <div class="wish-frame">
+                <h2 class="wish-title" id="wishTitle">Make a Wish</h2>
+                <p class="wish-subtitle">Click each candle to reveal a birthday wish</p>
+                <div class="wishes-display" id="wishesDisplay"></div>
+            </div>
+            <div class="candles-container">
+                <div class="candle" data-wish="May your days be filled with endless laughter.">
+                    <div class="candle-body">
+                        <div class="candle-stripe"></div>
+                        <div class="candle-stripe"></div>
+                    </div>
+                    <div class="flame"></div>
+                    <div class="smoke-container">
+                        <div class="smoke-particle"></div>
+                        <div class="smoke-particle"></div>
+                        <div class="smoke-particle"></div>
+                    </div>
+                </div>
+                <div class="candle" data-wish="Wishing you a year of adventure and joy.">
+                    <div class="candle-body">
+                        <div class="candle-stripe"></div>
+                        <div class="candle-stripe"></div>
+                    </div>
+                    <div class="flame"></div>
+                    <div class="smoke-container">
+                        <div class="smoke-particle"></div>
+                        <div class="smoke-particle"></div>
+                        <div class="smoke-particle"></div>
+                    </div>
+                </div>
+                <div class="candle" data-wish="May all your dreams take flight.">
+                    <div class="candle-body">
+                        <div class="candle-stripe"></div>
+                        <div class="candle-stripe"></div>
+                    </div>
+                    <div class="flame"></div>
+                    <div class="smoke-container">
+                        <div class="smoke-particle"></div>
+                        <div class="smoke-particle"></div>
+                        <div class="smoke-particle"></div>
+                    </div>
+                </div>
+                <div class="candle" data-wish="To health, happiness, and beautiful moments.">
+                    <div class="candle-body">
+                        <div class="candle-stripe"></div>
+                        <div class="candle-stripe"></div>
+                    </div>
+                    <div class="flame"></div>
+                    <div class="smoke-container">
+                        <div class="smoke-particle"></div>
+                        <div class="smoke-particle"></div>
+                        <div class="smoke-particle"></div>
+                    </div>
+                </div>
+                <div class="candle" data-wish="You are loved more than words can say.">
+                    <div class="candle-body">
+                        <div class="candle-stripe"></div>
+                        <div class="candle-stripe"></div>
+                    </div>
+                    <div class="flame"></div>
+                    <div class="smoke-container">
+                        <div class="smoke-particle"></div>
+                        <div class="smoke-particle"></div>
+                        <div class="smoke-particle"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== FLOWER MESSAGE SECTION 2 ==================== -->
+        <section class="flower-message-section" style="background-image: url('image(5).png')">
+            <div class="flower-overlay"></div>
+            <div class="svg-text-container">
+                <svg viewBox="0 0 900 200" class="scribble-svg">
+                    <text x="450" y="100" text-anchor="middle" class="text-stroke" id="strokeText2">Love you to the moon and back</text>
+                    <text x="450" y="100" text-anchor="middle" class="text-base" id="baseText2">Love you to the moon and back</text>
+                </svg>
+            </div>
+            <p class="flower-caption">To infinity and beyond</p>
+        </section>
+
+        <!-- ==================== LOVE LETTER SECTION ==================== -->
+        <section class="love-letter-section">
+            <div class="love-letter-bg" style="background-image: url('image(3).png')"></div>
+            <div class="love-letter-overlay"></div>
+            <div class="love-letter-card">
+                <div class="love-letter-corner love-letter-tl"></div>
+                <div class="love-letter-corner love-letter-tr"></div>
+                <div class="love-letter-corner love-letter-bl"></div>
+                <div class="love-letter-corner love-letter-br"></div>
+                <h2 class="love-letter-title">My Love,</h2>
+                <p class="love-letter-body">
+                    Every moment with you is a treasure I hold close to my heart. 
+                    You bring color to my world and warmth to my soul. 
+                    On your birthday, I want you to know how deeply you are cherished, 
+                    how completely you are loved, and how brightly you shine in my life.
+                </p>
+                <p class="love-letter-body">
+                    This scrapbook is just a small token of the immense love I feel for you. 
+                    Each page holds a piece of my heart, each wish carries my deepest affection, 
+                    and every word is written with the ink of devotion.
+                </p>
+                <div class="love-letter-signature">
+                    <span>Forever Yours,</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== FINAL MESSAGE SECTION ==================== -->
+        <section class="final-section" style="background-image: url('image(4).png')">
+            <div class="final-overlay"></div>
+            <div class="sparkles-container" id="sparklesContainer"></div>
+            <div class="final-content">
+                <h1 class="final-title" id="finalTitle">Forever Yours</h1>
+                <p class="final-subtitle" id="finalSubtitle">Happy Birthday</p>
+                <div class="final-heart">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== MUSIC CONTROL ==================== -->
+        <button class="music-btn" id="musicBtn" title="Toggle Music">
+            <svg class="music-icon-on" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+            </svg>
+            <svg class="music-icon-off" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+                <line x1="4" y1="4" x2="20" y2="20" stroke="currentColor" stroke-width="2"/>
+            </svg>
+        </button>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
